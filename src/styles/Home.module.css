@@ -114,7 +114,7 @@ a.secondary {
   padding: 20px;
   box-sizing: border-box;
   background-color: #000000;
-  background-image: url("/images/space.jpg");
+  background-image: url("/images/bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: repeat;
