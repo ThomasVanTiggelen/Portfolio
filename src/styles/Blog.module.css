@@ -1,0 +1,24 @@
+.blogContainer {
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  background-image: url("/images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.blogTitle {
+  text-align: center;
+  color: #f0e6d3;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.postsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
