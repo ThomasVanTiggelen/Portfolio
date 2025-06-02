@@ -1,37 +1,47 @@
-.eagle-lake-regular {
-  font-family: "Eagle Lake", serif;
-  font-weight: 400;
-  font-style: normal;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-body {
-  font-family: "Eagle Lake", serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f0f0f0;
-}
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .transform-style-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
 
-.medieval-button {
-  font-family: "Eagle Lake", serif;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-  background-color: #8b4513;
-  border: 2px solid #5a2c0d;
-  border-radius: 5px;
-  padding: 10px 20px;
-  cursor: pointer;
-  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
+  .prose-invert h1,
+  .prose-invert h2,
+  .prose-invert h3,
+  .prose-invert h4,
+  .prose-invert p,
+  .prose-invert ul,
+  .prose-invert ol { color: #FFEBD0;}
+  .prose-invert a {color: #278783;}
+  .prose-invert ul,
+  .prose-invert ol {padding-left: 1.5rem;}
 
-.medieval-button:hover {
-  background-color: #6b2c0d;
-  transform: translateY(-2px);
-}
+  .prose-invert li {
+    margin-bottom: 0.5rem;
+  }
 
-.medieval-button:active {
-  background-color: #5a2c0d;
-  transform: translateY(0);
+  .prose-invert h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .prose-invert h3 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+  }
 }

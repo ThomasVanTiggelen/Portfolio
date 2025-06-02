@@ -4,10 +4,6 @@ import type { AppProps } from "next/app";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap"
-        rel="stylesheet"
-      />
       <Component {...pageProps} />
     </>
   );
